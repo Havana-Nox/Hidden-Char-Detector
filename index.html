@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hidden Character Detector & Remover</title>
+    <meta name="description" content="A free online tool to detect and remove invisible Unicode characters from your text. Clean up zero-width spaces, non-breaking spaces, and more.">
+    <meta name="keywords" content="hidden characters, invisible characters, unicode, zero-width space, text cleaner, remove hidden characters">
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="assets/favicon.png" type="image/x-icon">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Hidden Character Detector",
+      "description": "Detect and remove hidden/invisible Unicode characters from text.",
+      "applicationCategory": "TextProcessing",
+      "operatingSystem": "All",
+      "browserRequirements": "Requires a modern browser.",
+      "url": "https://your-github-username.github.io/your-repo-name/"
+    }
+    </script>
+
+</head>
+<body>
+
+    <div class="container">
+        <header class="app-header">
+            <h1>Hidden Character Detector & Remover</h1>
+            <div class="theme-switcher" id="theme-switcher" title="Toggle dark/light mode">
+                <span class="theme-icon">☀️</span>
+                <span>Toggle Mode</span>
+            </div>
+        </header>
+
+        <main class="main-grid">
+            <div class="content-area">
+                <div class="card">
+                    <div class="card-header">
+                        <h2 class="card-title">Original Text</h2>
+                        <button id="clean-all-btn" class="button btn-primary">Clean All</button>
+                    </div>
+                    <textarea id="input-text" class="drop-zone" placeholder="Paste your text here or drop a .txt file..." spellcheck="false"></textarea>
+                </div>
+
+                <div class="comparison-grid">
+                    <div class="card">
+                        <div class="card-header">
+                            <h2 class="card-title">Visualized</h2>
+                        </div>
+                        <div id="visualized-output" class="text-output"></div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <h2 class="card-title">Cleaned Text</h2>
+                            <div>
+                                <button id="copy-btn" class="button btn-secondary" title="Copy to clipboard">Copy</button>
+                                <button id="download-btn" class="button btn-secondary" title="Download as .txt">Download</button>
+                            </div>
+                        </div>
+                        <div id="cleaned-output" class="text-output"></div>
+                    </div>
+                </div>
+            </div>
+
+            <aside class="sidebar">
+                <div class="card">
+                    <h2 class="card-title">Options</h2>
+                    <ul id="options-list" class="options-list">
+                        <!-- Options will be populated by JS -->
+                    </ul>
+                </div>
+                <div class="card">
+                    <h2 class="card-title">Statistics</h2>
+                    <ul id="stats-list" class="stats-list">
+                        <!-- Stats will be populated by JS -->
+                    </ul>
+                </div>
+            </aside>
+        </main>
+
+        <footer class="app-footer">
+            <p>Built with ❤️ using vanilla HTML, CSS, and JavaScript.</br>
+                Absolutely no data is collected or stored.
+            </p>
+        </footer>
+    </div>
+
+    <div id="toast-message" class="toast-message"></div>
+
+    <script src="assets/js/script.js" defer></script>
+</body>
+</html>
