@@ -4,7 +4,7 @@ A modern, responsive web application that allows users to detect and remove hidd
 
 ## Live Demo
 
-[Link to GitHub Pages URL will go here once deployed]
+https://havana-nox.github.io/Hidden-Char-Detector/
 
 ## Features
 
